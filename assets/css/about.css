@@ -1,0 +1,24 @@
+.welcomesensive{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fouricon{
+    text-align: center;
+    margin-right: 100px;
+    
+}
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #007bff; /* Dairenin arka plan rengi */
+    border-radius: 50%; /* Daireyi oluşturmak için */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    size: 100vh;
+  }
+  
+  .fa-user {
+    color: white; /* İkon rengi */
+    font-size: 24px; /* İkon boyutu */
+  }
