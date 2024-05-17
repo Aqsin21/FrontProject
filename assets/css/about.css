@@ -1,24 +1,173 @@
+html, body {
+  overflow-x: hidden; /* Sağa sola kaymayı engeller */
+   
+ 
+  
+}
+
+
+
 .welcomesensive{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
 }
-.fouricon{
+
+.sensive{
+ color: #007bff;
+  
+}
+
+.icons{
     text-align: center;
     margin-right: 100px;
+    display: flex;
+    gap: 0px;
+    transform: scale(1.8);color: white;
     
 }
-.circle {
+.fa-head-side-virus{
+  transform: scale(1.5);
+
+}
+
+.fa-atom{
+  transform: scale(1.5);
+}
+.fa-microscope{
+  transform: scale(1.5);
+
+}
+
+.fa-trophy{
+  transform: scale(1.5);
+}
+
+  .icon1{
+    margin-right: 80px;
+    margin-left: 400px;
+    margin-top: 100px;
+    width: 50px;
+    height: 50px;
+    background-color: #007bff; 
+    border-radius: 50%; 
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    size: 100vh;
+    border-color: black;
+  }
+
+  .icon2{
+
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-top: 100px;
     width: 50px;
     height: 50px;
     background-color: #007bff; /* Dairenin arka plan rengi */
     border-radius: 50%; /* Daireyi oluşturmak için */
-    display: flex;
+   display: flex;
     justify-content: center;
     align-items: center;
     size: 100vh;
   }
   
-  .fa-user {
-    color: white; /* İkon rengi */
-    font-size: 24px; /* İkon boyutu */
+  .icon3{
+    margin-right: 80px;
+    margin-left: 100px;
+    margin-top: 100px;
+    width: 50px;
+    height: 50px;
+    background-color: #007bff; /* Dairenin arka plan rengi */
+    border-radius: 50%; /* Daireyi oluşturmak için */
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    size: 100vh;
   }
+
+  .icon4{
+    margin-right: 100px;
+    margin-left: 80px;
+    margin-top: 100px;
+    width: 50px;
+    height: 50px;
+    background-color: #007bff; /* Dairenin arka plan rengi */
+    border-radius: 50%; /* Daireyi oluşturmak için */
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    size: 100vh;
+  }
+
+   .writes{
+    margin-top: 0%;
+    text-align: center;
+    margin-left: 90px;
+    display: flex;
+    gap: 85px;
+   }
+  .write1{
+    
+   
+    margin-right: 300px;
+    width: 200px; /* Genişlik */
+    height: 200px; /* Yükseklik */
+    padding: 20px; /* İç boşluk */
+    margin: 20px; /* Dış boşluk */
+    display: flex;
+    align-items: center; /* İçeriği dikeyde ortalama */
+    justify-content: center; /* İçeriği yatayda ortalama */
+    text-align: center; /* Metni ortalama */
+  }
+
+  .write2{
+    width: 200px; /* Genişlik */
+    height: 200px; /* Yükseklik */
+    padding: 20px; /* İç boşluk */
+    margin: 20px; /* Dış boşluk */
+    display: flex;
+    align-items: center; /* İçeriği dikeyde ortalama */
+    justify-content: center; /* İçeriği yatayda ortalama */
+    text-align: center; /* Metni ortalama */
+
+
+  }
+
+  .write3{
+    width: 200px; /* Genişlik */
+    height: 200px; /* Yükseklik */
+    padding: 20px; /* İç boşluk */
+    margin: 20px; /* Dış boşluk */
+    display: flex;
+    align-items: center; /* İçeriği dikeyde ortalama */
+    justify-content: center; /* İçeriği yatayda ortalama */
+    text-align: center; /* Metni ortalama */
+    margin-left: 100px;
+
+  }
+
+  .write4{
+    width: 200px; /* Genişlik */
+    height: 200px; /* Yükseklik */
+    padding: 20px; /* İç boşluk */
+    margin: 20px; /* Dış boşluk */
+    display: flex;
+    align-items: center; /* İçeriği dikeyde ortalama */
+    justify-content: center; /* İçeriği yatayda ortalama */
+    text-align: center; /* Metni ortalama */
+    margin-left: 70px;
+
+  }
+
+
+
+
+.next{
+  margin-right: 0%;
+}
+
+
+
+  
