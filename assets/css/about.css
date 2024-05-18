@@ -18,6 +18,14 @@ html, body {
   
 }
 
+
+
+
+
+
+
+
+
 .icons{
     text-align: center;
     margin-right: 100px;
@@ -169,5 +177,12 @@ html, body {
 }
 
 
+.line-with-circle{
+  margin-top: 40px;
+  height: 2px; 
+  background-color: #040404;
+  border: none;
+  width: 30%;
+ 
+}
 
-  
