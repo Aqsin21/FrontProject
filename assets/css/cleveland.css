@@ -20,8 +20,13 @@
     background-color: #000; 
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
+    
     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 
 }
 
@@ -190,6 +195,7 @@
 
 .MainButton{
     color: #f0f0f0;
+    gap: 10px;
     
     margin-right: 0px;
     text-decoration:none ;
@@ -197,85 +203,229 @@
     
    
 }
-.MainHome{
-    margin-left: -150px;
+
+  
+
+
+
+.MainHome {
+    background-color: black; 
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     &:hover {
-      box-shadow: 0 0 40px 40px aquamarine inset;
+      box-shadow: 0 0 40px 40px rgb(84, 94, 186) inset;
     }
-    
 }
-  
-  
+
+
 
 
 .Mainabout{
-    margin-left: -150px;
-    
-    
-        transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-        &:hover {
-          box-shadow: 0 0 40px 40px aquamarine inset;
-        }
+    background-color: black; 
+   
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 40px 40px rgb(84, 94, 186) inset;
+    }
       
 }
 
 .MainServices{
-
-    margin-left: -150px;
+    background-color: black; 
+   
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     &:hover {
-      box-shadow: 0 0 40px 40px aquamarine inset;
+      box-shadow: 0 0 40px 40px rgb(84, 94, 186) inset;
     }
+
+   
+   
+   
 }
 .MainDoctors{
-     margin-left: -150px;
-     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-     &:hover {
-       box-shadow: 0 0 40px 40px aquamarine inset;
-     }
-}
-
-.MainAppoint{
-
-  margin-left: -150px;
-  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-  &:hover {
-    box-shadow: 0 0 40px 40px aquamarine inset;
-  }
-
-}
-
-.MainAppoint{
-    margin-left: -150px;
+    background-color: black; 
+   
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     &:hover {
-      box-shadow: 0 0 40px 40px aquamarine inset;
+      box-shadow: 0 0 40px 40px rgb(84, 94, 186) inset;
     }
 }
-  
+
+.MainAppoint{
+
+    background-color: black; 
+   
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 40px 40px rgb(84, 94, 186) inset;
+    }
+}
+
+
 .MainTest{
-    margin-left: -150px;
+    background-color: black; 
+   
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     &:hover {
-      box-shadow: 0 0 40px 40px aquamarine inset;
+      box-shadow: 0 0 40px 40px rgb(84, 94, 186) inset;
     }
+
 }
 
 .MainBlog{
-    margin-left: -150px;
+    background-color: black; 
+   
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     &:hover {
-      box-shadow: 0 0 40px 40px aquamarine inset;
+      box-shadow: 0 0 40px 40px rgb(84, 94, 186) inset;
+    }
+}
+.container {
+    position: relative;
+    display: inline-block;
+    
+   
+
+}
+.hover-button {
+    background-color: transparent;
+    color: rgb(236, 229, 229);
+    padding: 80px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.hover-button:hover {
+    background-color: blue;
+    color: white;
+}
+.main-button {
+    background-color: black; 
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 40px 40px rgb(84, 94, 186) inset;
     }
 }
 
-
-.i-want-to{
-    margin-right: 150px;
-    
-
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.container:hover .dropdown-content {
+    display: block;
+}
+
+.L1{
+    background-color: white; 
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 40px 40px rgb(84, 94, 186) inset;
+    }
+}
+.L2{
+    background-color: white; 
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 40px 40px rgb(84, 94, 186) inset;
+    }
+}
+.L3{
+    background-color: white; 
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 40px 40px rgb(84, 94, 186) inset;
+    }
+}
+.L4{
+    background-color: white; 
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 40px 40px rgb(84, 94, 186) inset;
+    }
+}
+
 
 .ul{
     list-style: none;
@@ -430,6 +580,8 @@ ul li ul.dropdown{
     height: 50px;
 
 }
+
+
 
 
  
