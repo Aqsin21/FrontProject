@@ -175,6 +175,8 @@ button {
 }
 
 
+
+
 @keyframes slideFromTop {
   from {
     transform: translateY(-100%);
@@ -205,3 +207,27 @@ button {
  
 }
 
+.statistics {
+  display: flex;
+  justify-content: space-around;
+}
+
+.statistic {
+  text-align: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px; /* Adjust width as needed */
+  margin: 20px; /* Adjust margin as needed */
+}
+
+.statistic h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.statistic p {
+  font-size: 16px;
+  color: #666;
+}
