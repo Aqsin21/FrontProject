@@ -1,5 +1,7 @@
 html, body {
   overflow-x: hidden; /* Sağa sola kaymayı engeller */
+  margin: 0%;
+  padding: 0%;
    
  
   
@@ -10,171 +12,188 @@ html, body {
 .welcomesensive{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 100px;
+    font-size: 60px;
 }
 
 .sensive{
  color: #007bff;
+
+ .line-with-circle{
+  margin-top: 40px;
+  height: 2px; 
+  background-color: #040404;
+  border: none;
+  width: 30%;
+ 
+}
+
   
 }
-
-
-
-
-
-
-
-
-
-.icons{
-    text-align: center;
-    margin-right: 100px;
-    display: flex;
-    gap: 0px;
-    transform: scale(1.8);color: white;
-    
+.lobox{
+  border: 2px solid white ; 
+  padding: 10px;          
+  width: 500px;           
+  margin: 20px auto;      
+ 
 }
-.fa-head-side-virus{
-  transform: scale(1.5);
-
+.Lorem{
+  font-size: 20px;
 }
 
-.fa-atom{
-  transform: scale(1.5);
+.icons {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 200px; 
+  padding: 20px; 
+  font-family: Arial, Helvetica, sans-serif;
 }
-.fa-microscope{
-  transform: scale(1.5);
+
+
+
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.icon1:hover img,
+.icon2:hover img,
+.icon3:hover img,
+.icon4:hover img {
+  animation: rotate 1s linear forwards;
+}
+
+
+
+
+
+.write1 {
+  border: 2px solid white ; 
+  padding: 10px;          
+  width: 500px;           
+  margin: 20px auto;      
+ 
+     
+ 
+}
+
+.write2{
+  border: 2px solid white ; 
+  padding: 10px;          
+  width: 500px;           
+  margin: 20px auto;      
+ 
+}
+.write3{
+  border: 2px solid white ; 
+  padding: 10px;          
+  width: 500px;           
+  margin: 20px auto;      
+ 
+}
+.write4{
+  border: 2px solid white ; 
+  padding: 10px;          
+  width: 500px;           
+  margin: 20px auto;      
+ 
+}
+
+.sec1{
+ text-align: center;
+}
+
+
+.sec2{
+  text-align: center;
+}
+
+.sec3{
+  text-align: center;
+}
+
+.sec4{
+ text-align: center;
+}
+
+.gallery {
+  text-align: center;
+  position: relative;
+  transition: 2s;
+}
+
+button {
+  margin: 10px;
+}
+.ConI{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 
 }
 
-.fa-trophy{
-  transform: scale(1.5);
-}
-
-  .icon1{
-    margin-right: 80px;
-    margin-left: 400px;
-    margin-top: 100px;
-    width: 50px;
-    height: 50px;
-    background-color: #007bff; 
+#prevButton {
+  position: absolute;
+  top: 50%; 
+  left: -80px; 
+  
+  transform: translateY(-50%); 
+  width: 50px; 
+    height: 50px; 
     border-radius: 50%; 
-   display: flex;
-    justify-content: center;
-    align-items: center;
-    size: 100vh;
-    border-color: black;
+    border: none;
+    background-color: #007bff;
+}
+.fa-arrow-left{
+  color: white;
+
+}
+
+#nextButton {
+  position: absolute;
+  top: 50%; 
+  
+  right: -80px; 
+  transform: translateY(-50%); 
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%; 
+  border: none;
+  background-color: #007bff;
+
+}
+.fa-arrow-right{
+
+  color: white;
+
+}
+
+
+@keyframes slideFromTop {
+  from {
+    transform: translateY(-100%);
   }
-
-  .icon2{
-
-    margin-right: 80px;
-    margin-left: 80px;
-    margin-top: 100px;
-    width: 50px;
-    height: 50px;
-    background-color: #007bff; /* Dairenin arka plan rengi */
-    border-radius: 50%; /* Daireyi oluşturmak için */
-   display: flex;
-    justify-content: center;
-    align-items: center;
-    size: 100vh;
+  to {
+    transform: translateY(0);
   }
   
-  .icon3{
-    margin-right: 80px;
-    margin-left: 100px;
-    margin-top: 100px;
-    width: 50px;
-    height: 50px;
-    background-color: #007bff; /* Dairenin arka plan rengi */
-    border-radius: 50%; /* Daireyi oluşturmak için */
-   display: flex;
-    justify-content: center;
-    align-items: center;
-    size: 100vh;
-  }
-
-  .icon4{
-    margin-right: 100px;
-    margin-left: 80px;
-    margin-top: 100px;
-    width: 50px;
-    height: 50px;
-    background-color: #007bff; /* Dairenin arka plan rengi */
-    border-radius: 50%; /* Daireyi oluşturmak için */
-   display: flex;
-    justify-content: center;
-    align-items: center;
-    size: 100vh;
-  }
-
-   .writes{
-    margin-top: 0%;
-    text-align: center;
-    margin-left: 90px;
-    display: flex;
-    gap: 85px;
-   }
-  .write1{
-    
-   
-    margin-right: 300px;
-    width: 200px; /* Genişlik */
-    height: 200px; /* Yükseklik */
-    padding: 20px; /* İç boşluk */
-    margin: 20px; /* Dış boşluk */
-    display: flex;
-    align-items: center; /* İçeriği dikeyde ortalama */
-    justify-content: center; /* İçeriği yatayda ortalama */
-    text-align: center; /* Metni ortalama */
-  }
-
-  .write2{
-    width: 200px; /* Genişlik */
-    height: 200px; /* Yükseklik */
-    padding: 20px; /* İç boşluk */
-    margin: 20px; /* Dış boşluk */
-    display: flex;
-    align-items: center; /* İçeriği dikeyde ortalama */
-    justify-content: center; /* İçeriği yatayda ortalama */
-    text-align: center; /* Metni ortalama */
-
-
-  }
-
-  .write3{
-    width: 200px; /* Genişlik */
-    height: 200px; /* Yükseklik */
-    padding: 20px; /* İç boşluk */
-    margin: 20px; /* Dış boşluk */
-    display: flex;
-    align-items: center; /* İçeriği dikeyde ortalama */
-    justify-content: center; /* İçeriği yatayda ortalama */
-    text-align: center; /* Metni ortalama */
-    margin-left: 100px;
-
-  }
-
-  .write4{
-    width: 200px; /* Genişlik */
-    height: 200px; /* Yükseklik */
-    padding: 20px; /* İç boşluk */
-    margin: 20px; /* Dış boşluk */
-    display: flex;
-    align-items: center; /* İçeriği dikeyde ortalama */
-    justify-content: center; /* İçeriği yatayda ortalama */
-    text-align: center; /* Metni ortalama */
-    margin-left: 70px;
-
-  }
-
-
-
-
-.next{
-  margin-right: 0%;
 }
+   
+ 
+  
+
+  
+
+
+
+
+
 
 
 .line-with-circle{
