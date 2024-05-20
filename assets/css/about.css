@@ -550,10 +550,10 @@ button {
   width: 100px;
   height: 100px;
   
-  border: 1px solid #fff;
+  border: 1px solid transparent; /* Başlangıçta kenarları şeffaf yapın */
   overflow: hidden;
   
-  box-shadow: 0 4px 8px #ffffff;
+  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.2); /* Gölgeyi ayarlayın */
   transform-origin: top right;
   transition: transform 0.3s ease; /* Dönüşümün animasyonu */
   transform: scaleX(0); /* Başlangıçta gizle */
