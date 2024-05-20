@@ -1,10 +1,286 @@
 html, body {
-  overflow-x: hidden; /* Sağa sola kaymayı engeller */
-  margin: 0%;
+  
+ 
   padding: 0%;
+ 
    
  
   
+}
+.MainNavbar{
+  background-color: #000; 
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+
+}
+.MainButton{
+  color: #f0f0f0;
+  gap: 10px;
+  
+  margin-right: 0px;
+  text-decoration:none ;
+  font-weight: 1000px;
+  
+ 
+}
+
+
+
+
+
+.MainHome {
+  background-color: black; 
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  &:hover {
+    box-shadow: 0 0 40px 40px rgb(84, 94, 186) inset;
+  }
+}
+
+
+
+
+.Mainabout{
+  background-color: black; 
+ 
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  &:hover {
+    box-shadow: 0 0 40px 40px rgb(84, 94, 186) inset;
+  }
+    
+}
+
+.MainServices{
+  background-color: black; 
+ 
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  &:hover {
+    box-shadow: 0 0 40px 40px rgb(84, 94, 186) inset;
+  }
+
+ 
+ 
+ 
+}
+.MainDoctors{
+  background-color: black; 
+ 
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  &:hover {
+    box-shadow: 0 0 40px 40px rgb(84, 94, 186) inset;
+  }
+}
+
+.MainAppoint{
+
+  background-color: black; 
+ 
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  &:hover {
+    box-shadow: 0 0 40px 40px rgb(84, 94, 186) inset;
+  }
+}
+
+
+.MainTest{
+  background-color: black; 
+ 
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  &:hover {
+    box-shadow: 0 0 40px 40px rgb(84, 94, 186) inset;
+  }
+
+}
+
+.MainBlog{
+  background-color: black; 
+ 
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  &:hover {
+    box-shadow: 0 0 40px 40px rgb(84, 94, 186) inset;
+  }
+}
+.container {
+  position: relative;
+  display: inline-block;
+  
+ 
+
+}
+.hover-button {
+  background-color: transparent;
+  color: rgb(236, 229, 229);
+  padding: 80px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.hover-button:hover {
+  background-color: blue;
+  color: white;
+}
+.main-button {
+  background-color: black; 
+  text-decoration: none;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  &:hover {
+    box-shadow: 0 0 40px 40px rgb(84, 94, 186) inset;
+  }
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.container:hover .dropdown-content {
+  display: block;
+}
+
+.L1{
+  background-color: white; 
+  text-decoration: none;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  &:hover {
+    box-shadow: 0 0 40px 40px rgb(84, 94, 186) inset;
+  }
+}
+.L2{
+  background-color: white; 
+  text-decoration: none;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  &:hover {
+    box-shadow: 0 0 40px 40px rgb(84, 94, 186) inset;
+  }
+}
+.L3{
+  background-color: white; 
+  text-decoration: none;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  &:hover {
+    box-shadow: 0 0 40px 40px rgb(84, 94, 186) inset;
+  }
+}
+.L4{
+  background-color: white; 
+  text-decoration: none;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  &:hover {
+    box-shadow: 0 0 40px 40px rgb(84, 94, 186) inset;
+  }
+}
+
+
+.ul{
+  list-style: none;
+  background: #22438c;
+}
+.ul li{
+  display: inline-block;
+  position: relative;
+}
+.ul li a{
+  display: block;
+  padding: 20px 25px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+}
+
+ul li ul.dropdown{
+  width: 100px;
+  background: #22438c;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+.fa-user-doctor{
+  transform: scale(0.5);
 }
 
 
@@ -13,6 +289,7 @@ html, body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 60px;
+    margin-top: 10px;
 }
 
 .sensive{
@@ -206,28 +483,131 @@ button {
   width: 30%;
  
 }
+/* .stimg {
+  justify-content: center;
+  height: 10vh;
 
-.statistics {
+}
+*/
+.footer {
+  position: relative;
+}
+
+.footer .img1 img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.footer .img1 .tons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(81, 114, 166, 0.6); /* Bu rengi ihtiyacınıza göre değiştirebilirsiniz */
+}
+
+.footpap{
+  position: absolute;
   display: flex;
-  justify-content: space-around;
+  justify-content:center;
+  gap: 170px;
+  
+  top: 10px;
+  
+  
+
 }
 
-.statistic {
-  text-align: center;
-  padding: 20px;
-  background-color: #f2f2f2;
-  border-radius: 10px;
+.paper {
+  position: relative; /* Relative pozisyon belirleyelim */
+  width: 200px;
+  height: 200px;
+ 
+  border: 1px solid #fff;
+  position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 200px; /* Adjust width as needed */
-  margin: 20px; /* Adjust margin as needed */
+  overflow: hidden;
+  border-bottom-left-radius: 50%; /* Sol alt köşeyi kavisli yap */
+  transition: border-radius 0.3s ease; /* Köşelerin ani değişimi */
 }
 
-.statistic h2 {
-  font-size: 24px;
-  margin-bottom: 5px;
+/* Hover durumu */
+.paper:hover {
+  border-bottom-left-radius: 0%; /* Sol alt köşeyi düzleştir */
+  background-color: #ffffff; 
+  transition: background-color 0.3s; 
+  color: rgb(69, 69, 163);
 }
 
-.statistic p {
-  font-size: 16px;
-  color: #666;
+/* Kağıdın sağ üst köşesi */
+.paper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  
+  border: 1px solid #fff;
+  overflow: hidden;
+  
+  box-shadow: 0 4px 8px #ffffff;
+  transform-origin: top right;
+  transition: transform 0.3s ease; /* Dönüşümün animasyonu */
+  transform: scaleX(0); /* Başlangıçta gizle */
+  border-top-right-radius: 50%; /* Sağ üst köşeyi kavisli yap */
+
+  
 }
+
+/* Hover durumu */
+.paper:hover::after {
+  transform: scaleX(1); /* Dönüşüm */
+ 
+}
+
+.fa-people-group{
+  transform: scale(4.5);
+  margin-top: 80px;
+  margin-left: 90px;
+ 
+}
+
+.fa-user-nurse{
+  transform: scale(4.5);
+  margin-top: 80px;
+  margin-left: 90px;
+}
+
+.fa-user-doctor{
+  transform: scale(4.5);
+  margin-top: 80px;
+  margin-left: 90px;
+}
+.fa-graduation-cap{
+  transform: scale(4.5);
+  margin-top: 80px;
+  margin-left: 90px;
+}
+
+
+.footer .footpap .Happy {
+  margin-left: -78pc;
+  color: #ffffff;
+}
+.Medical{
+  margin-left: 75px;
+  color: #ffffff;
+}
+ .Doctors1{
+  margin-left: 70px;
+  color: #ffffff;
+ }
+  
+ .Experience{
+  margin-left: 80px;
+  color: #ffffff;
+ }
+
