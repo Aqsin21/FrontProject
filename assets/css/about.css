@@ -527,46 +527,20 @@ button {
  
   border: 1px solid #fff;
   position: relative;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   border-bottom-left-radius: 50%; /* Sol alt köşeyi kavisli yap */
-  transition: border-radius 0.3s ease; /* Köşelerin ani değişimi */
+  transition: border-radius 0.5s ease; /* Köşelerin ani değişimi */
 }
 
 /* Hover durumu */
 .paper:hover {
   border-bottom-left-radius: 0%; /* Sol alt köşeyi düzleştir */
   background-color: #ffffff; 
-  transition: background-color 0.3s; 
   color: rgb(69, 69, 163);
+  border-top-right-radius: 50%;
 }
 
-/* Kağıdın sağ üst köşesi */
-.paper::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100px;
-  height: 100px;
-  
-  border: 1px solid transparent; /* Başlangıçta kenarları şeffaf yapın */
-  overflow: hidden;
-  
-  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.2); /* Gölgeyi ayarlayın */
-  transform-origin: top right;
-  transition: transform 0.3s ease; /* Dönüşümün animasyonu */
-  transform: scaleX(0); /* Başlangıçta gizle */
-  border-top-right-radius: 50%; /* Sağ üst köşeyi kavisli yap */
 
-  
-}
-
-/* Hover durumu */
-.paper:hover::after {
-  transform: scaleX(1); /* Dönüşüm */
- 
-}
 
 .fa-people-group{
   transform: scale(4.5);
@@ -611,3 +585,25 @@ button {
   color: #ffffff;
  }
 
+.line{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+ .welcome-line{
+  position: absolute;
+  height: 3px;
+  background-color: black;
+  width: 70px;
+ }
+
+ .dot{
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  left: 28px;
+  bottom: 3px;
+}
