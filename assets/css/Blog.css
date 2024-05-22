@@ -474,6 +474,7 @@ ul li ul.dropdown {
   flex-direction: column;
   align-items: center;
   width: 30%;
+  height: 10%;
 }
 
 .tableb:hover {
@@ -548,7 +549,7 @@ ul li ul.dropdown {
 .sponsors{
   position: absolute;
   margin-top: 700px;
-  left: 300px;
+  left: 170px;
 
 }
 
@@ -593,10 +594,12 @@ ul li ul.dropdown {
   background-image: url('/images/counter-bg\ \(1\).jpg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
+  background-size: contain;
+  
   height: 444px;
   top: 900px;
+  width: 1650px;
+  left: -430vh;
 }
 
 
@@ -605,6 +608,11 @@ ul li ul.dropdown {
   color: #fff;
   padding: 60px 0 20px;
   margin-top: 500px;
+  width: 100%;
+}
+
+.footer-link{
+  font-size: 1px;
 }
 
 .footer .container {
@@ -615,13 +623,13 @@ ul li ul.dropdown {
 .footer .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Alanı eşit şekilde dağıtmak için */
+  justify-content: space-between; 
   margin-left: 180px;
 }
 
 .footer > .container > .row > div {
-  flex: 1; /* Her bir sütunun esnek olmasını sağlar */
-  margin: 10px; /* Sütunlar arasında boşluk bırakır */
+  flex: 1;
+  margin: 10px; 
 }
 
 .footer-about, .footer-link, .footer-contact, .footer-subscribe {
@@ -656,7 +664,7 @@ ul li ul.dropdown {
 .footer-link ul li a {
   color: #ccc;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 10px;
   transition: color 0.3s;
 }
 
@@ -693,28 +701,28 @@ ul li ul.dropdown {
 .footer-subscribe input[type="email"] {
   padding: 10px;
   font-size: 14px;
-  border: 2px solid #007bff; /* Dış hatları mavi yapmak için */
+  border: 2px solid #007bff; 
   border-radius: 3px 0 0 3px;
-  background: transparent; /* Arka planı boş bırakmak için */
-  color: #fff; /* Metin rengini beyaz yapmak için */
+  background: transparent; 
+  color: #fff; 
   width: 70%;
-  transition: background 0.3s, color 0.3s; /* Geçiş efekti eklemek için */
+  transition: background 0.3s, color 0.3s; 
 }
 
 .footer-subscribe input[type="email"]::placeholder {
-  color: #ccc; /* Placeholder metin rengini ayarlamak için */
+  color: #ccc; 
 }
 
 .footer-subscribe input[type="email"]:focus {
-  background: #333; /* Odaklandığında arka planı biraz daha koyu yapmak için */
-  outline: none; /* Varsayılan odak halkasını kaldırmak için */
+  background: #333; 
+  outline: none;
 }
 
 .footer-subscribe button {
   padding: 10px;
-  background: #301e95; /* Buton arka planı */
-  border: none; /* Buton dış hatları */
-  color: #fff; /* Buton metin rengi */
+  background: #301e95; 
+  border: none; 
+  color: #fff; 
   font-size: 16px;
   cursor: pointer;
   border-radius: 0 3px 3px 0;
