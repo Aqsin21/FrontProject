@@ -672,6 +672,7 @@ ul li ul.dropdown{
     background: #333;
     color: #fff;
     padding: 60px 0 20px;
+    margin-top: 500px;
 }
 
 .footer .container {
@@ -683,6 +684,7 @@ ul li ul.dropdown{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; /* Alanı eşit şekilde dağıtmak için */
+    margin-left: 180px;
 }
 
 .footer > .container > .row > div {
@@ -727,7 +729,7 @@ ul li ul.dropdown{
 }
 
 .footer-link ul li a:hover {
-    color: #fff;
+    color: #22438c;
 }
 
 .footer-contact ul {
@@ -739,8 +741,15 @@ ul li ul.dropdown{
     margin-bottom: 10px;
     font-size: 14px;
     color: #ccc;
+    text-decoration: none;
 }
 
+
+.footer-contact ul li:hover{
+    color: #22438c;
+
+
+}
 .footer-contact ul li i {
     margin-right: 10px;
 }
@@ -752,16 +761,28 @@ ul li ul.dropdown{
 .footer-subscribe input[type="email"] {
     padding: 10px;
     font-size: 14px;
-    border: none;
+    border: 2px solid #007bff; /* Dış hatları mavi yapmak için */
     border-radius: 3px 0 0 3px;
+    background: transparent; /* Arka planı boş bırakmak için */
+    color: #fff; /* Metin rengini beyaz yapmak için */
     width: 70%;
+    transition: background 0.3s, color 0.3s; /* Geçiş efekti eklemek için */
+}
+
+.footer-subscribe input[type="email"]::placeholder {
+    color: #ccc; /* Placeholder metin rengini ayarlamak için */
+}
+
+.footer-subscribe input[type="email"]:focus {
+    background: #333; /* Odaklandığında arka planı biraz daha koyu yapmak için */
+    outline: none; /* Varsayılan odak halkasını kaldırmak için */
 }
 
 .footer-subscribe button {
     padding: 10px;
-    background: #ff5e14;
-    border: none;
-    color: #fff;
+    background: #301e95; /* Buton arka planı */
+    border: none; /* Buton dış hatları */
+    color: #fff; /* Buton metin rengi */
     font-size: 16px;
     cursor: pointer;
     border-radius: 0 3px 3px 0;
@@ -801,6 +822,7 @@ ul li ul.dropdown{
 .footer-bottom-link li a:hover {
     color: #fff;
 }
+
 
 
 

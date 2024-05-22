@@ -542,3 +542,215 @@ ul li ul.dropdown {
     margin-left: 330px;
 
 }
+
+
+
+.sponsors{
+  position: absolute;
+  margin-top: 700px;
+  left: 300px;
+
+}
+
+.sponsors nav a {
+  margin-right: 90px; 
+  
+}
+
+.sponsors nav a:last-child {
+  margin-right: 0; 
+}
+
+.sp1{
+  position: absolute;
+  border: 1px solid black;
+ 
+}
+
+.sp2{
+  position: absolute;
+  border: 1px solid black;
+  left: 40vh;
+}
+
+.spo3{
+  position: absolute;
+  border: 1px solid black;
+  left: 80vh;
+}
+
+
+
+.sp4{
+  position: absolute;
+  border: 1px solid black;
+  left: 120vh;
+}
+
+
+.fton{
+  position: relative;
+  background-image: url('/images/counter-bg\ \(1\).jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 444px;
+  top: 900px;
+}
+
+
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 60px 0 20px;
+  margin-top: 500px;
+}
+
+.footer .container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Alanı eşit şekilde dağıtmak için */
+  margin-left: 180px;
+}
+
+.footer > .container > .row > div {
+  flex: 1; /* Her bir sütunun esnek olmasını sağlar */
+  margin: 10px; /* Sütunlar arasında boşluk bırakır */
+}
+
+.footer-about, .footer-link, .footer-contact, .footer-subscribe {
+  margin-bottom: 30px;
+}
+
+.footer-about h3, .footer-link h3, .footer-contact h3, .footer-subscribe h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-about p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #ccc;
+}
+
+.footer-about a img {
+  width: 120px;
+  margin-top: 10px;
+}
+
+.footer-link ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-link ul li {
+  margin-bottom: 10px;
+}
+
+.footer-link ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-link ul li a:hover {
+  color: #22438c;
+}
+
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-contact ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+
+.footer-contact ul li:hover{
+  color: #22438c;
+
+
+}
+.footer-contact ul li i {
+  margin-right: 10px;
+}
+
+.footer-subscribe form {
+  display: flex;
+}
+
+.footer-subscribe input[type="email"] {
+  padding: 10px;
+  font-size: 14px;
+  border: 2px solid #007bff; /* Dış hatları mavi yapmak için */
+  border-radius: 3px 0 0 3px;
+  background: transparent; /* Arka planı boş bırakmak için */
+  color: #fff; /* Metin rengini beyaz yapmak için */
+  width: 70%;
+  transition: background 0.3s, color 0.3s; /* Geçiş efekti eklemek için */
+}
+
+.footer-subscribe input[type="email"]::placeholder {
+  color: #ccc; /* Placeholder metin rengini ayarlamak için */
+}
+
+.footer-subscribe input[type="email"]:focus {
+  background: #333; /* Odaklandığında arka planı biraz daha koyu yapmak için */
+  outline: none; /* Varsayılan odak halkasını kaldırmak için */
+}
+
+.footer-subscribe button {
+  padding: 10px;
+  background: #301e95; /* Buton arka planı */
+  border: none; /* Buton dış hatları */
+  color: #fff; /* Buton metin rengi */
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding: 20px 0;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-bottom-link {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.footer-bottom-link li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.footer-bottom-link li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-bottom-link li a:hover {
+  color: #fff;
+}
