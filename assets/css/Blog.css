@@ -590,7 +590,7 @@ ul li ul.dropdown {
 
 
 .fton{
-  position: relative;
+  margin-left: 700px;
   background-image: url('/images/counter-bg\ \(1\).jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -609,6 +609,11 @@ ul li ul.dropdown {
   padding: 60px 0 20px;
   margin-top: 500px;
   width: 100%;
+}
+
+.footer1{
+  margin-left: -2500px;
+  margin-top: 800px
 }
 
 .footer-link{
