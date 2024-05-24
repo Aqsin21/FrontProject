@@ -1,0 +1,70 @@
+{
+    "doctors":[
+
+      {
+        "id":"1",
+        "name":"Metin Vahid",
+        "image":"https://stock.adobe.com/search?k=doctor"
+
+      },
+      {
+        "id":"2",
+        "name":"Yaqub Ahmedov",
+        "image":"https://stock.adobe.com/search?k=doctor"
+      },
+
+      {
+        "id":3,
+        "name":"Malikov Malik",
+        "image":"https://stock.adobe.com/search?k=doctor"
+      },
+
+      {
+        "id":"4",
+        "name":"Abbaszade Aqsin",
+        "image":"https://stock.adobe.com/search?k=doctor"
+      },
+      {
+        "id":"5",
+        "name":"Ferid Bayramov",
+        "image":"https://stock.adobe.com/search?k=doctor"
+      }
+
+      
+
+     
+
+
+
+
+
+
+
+
+
+    ],
+
+    "services":[
+        {
+            "id":"1",
+            "service":"intensive care",
+            "number of doctors":"50"
+
+        
+        },
+
+        {
+            "id":"2",
+            "service":"emergency",
+            "number of doctors":"40"
+        },
+
+        {
+            "id":"3",
+            "service":"Estetic",
+            "number of doctors":"20"
+        }
+
+    ]
+}
+
