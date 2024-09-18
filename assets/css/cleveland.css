@@ -383,6 +383,7 @@
 
 }
 
+
 .container:hover .dropdown-content {
     display: block;
 }
@@ -823,6 +824,26 @@ ul li ul.dropdown{
 .footer-bottom-link li a:hover {
     color: #fff;
 }
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+   .FirstNavbar  {
+     width: 100%;
+    }
+
+    .Cleveland{
+        text-align: center;
+    }
+    .InfNavbar{
+        flex-direction: column;
+        width: 100%; /* Elemanların tam genişlik kaplamasını sağlar */
+        margin: 50px 0; /* Üst ve alt boşluk */
+    }
+  }
+  
 
 
 
