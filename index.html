@@ -637,30 +637,49 @@
   </div>
  </div>
  <div class="row popular_1 mt-4">
-   <ul class="nav nav-tabs  border-0 mb-0">
-    <li class="nav-item">
-        <a href="#home" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
-            <span class="d-md-block">JUST ARRIVED</span>
-        </a>
-    </li>
-    <li class="nav-item">
-        <a href="#profile" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
-            <span class="d-md-block">POPULAR EVENTS</span>
-        </a>
-    </li>
-    <li class="nav-item">
-        <a href="#settings" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
-            <span class="d-md-block">TV SHOWS</span>
-        </a>
-    </li>
-	<li class="nav-item">
-        <a href="#settings_o" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
-            <span class="d-md-block">FREE MOVIES</span>
-        </a>
-    </li>
-	
-</ul>
- </div>
+	<ul class="nav nav-tabs border-0 mb-0">
+		<li class="nav-item">
+			<a href="#all" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
+			  <span class="d-md-block">ALL</span>
+			</a>
+		  </li>
+	  <li class="nav-item">
+		<a href="#comedy" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
+		  <span class="d-md-block">COMEDY</span>
+		</a>
+	  </li>
+	  <li class="nav-item">
+		<a href="#horror" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+		  <span class="d-md-block">HORROR</span>
+		</a>
+	  </li>
+	  <li class="nav-item">
+		<a href="#drama" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
+		  <span class="d-md-block">DRAMA</span>
+		</a>
+	  </li>
+	  <li class="nav-item">
+		<a href="#action" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
+		  <span class="d-md-block">ACTION</span>
+		</a>
+	  </li>
+	</ul>
+  </div>
+  
+  <div class="tab-content mt-4">
+	<div class="tab-pane fade show active" id="comedy">
+	  <div id="comedy-container" class="row"></div>
+	</div>
+	<div class="tab-pane fade" id="horror">
+	  <div id="horror-container" class="row"></div>
+	</div>
+	<div class="tab-pane fade" id="drama">
+	  <div id="drama-container" class="row"></div>
+	</div>
+	<div class="tab-pane fade" id="action">
+	  <div id="action-container" class="row"></div>
+	</div>
+  </div>
  <div class="popular_2 row mt-4">
    <div class="tab-content">
     <div class="tab-pane active" id="home">
@@ -1816,122 +1835,125 @@ function myFunction() {
 	  let allShows = [];
 	  let currentIndex = 0;
 	  const step = 6;
-	
-	  // Show loading indicator
+	  let filteredShows = [];
+
 	  const loadingIndicator = document.createElement('p');
 	  loadingIndicator.textContent = 'Loading shows...';
 	  loadingIndicator.className = 'text-info';
 	  container.appendChild(loadingIndicator);
-	
+
 	  function createCard(show) {
 		const col = document.createElement('div');
 		col.className = 'col-md-6 mb-4';
-	
+
 		const card = document.createElement('div');
 		card.className = 'popular_2i1 row';
-	
+
 		const imgCol = document.createElement('div');
 		imgCol.className = 'col-md-4 col-4';
-	
+
 		const imgWrapper = document.createElement('div');
 		imgWrapper.className = 'popular_2i1lm position-relative clearfix';
-	
+
 		const imgInner = document.createElement('div');
 		imgInner.className = 'popular_2i1lm1 clearfix';
-	
+
 		const figure = document.createElement('figure');
 		figure.className = 'effect-jazz mb-0';
-	
+
 		const link = document.createElement('a');
-		link.href = '#';
-	
+		link.href = `details.html?id=${show.id}`;
+		link.className = 'show-detail-link';
+
 		const img = document.createElement('img');
 		img.className = 'w-100';
 		img.alt = show.name;
 		img.src = show.image ? show.image.medium : 'img/placeholder.jpg';
-	
+
 		link.appendChild(img);
 		figure.appendChild(link);
 		imgInner.appendChild(figure);
 		imgWrapper.appendChild(imgInner);
-	
+
 		const playIconDiv = document.createElement('div');
 		playIconDiv.className = 'trend_2im2 clearfix text-center position-absolute w-100 top-0';
-	
+
 		const playSpan = document.createElement('span');
 		playSpan.className = 'fs-1';
-	
+
 		const playLink = document.createElement('a');
 		playLink.className = 'col_red';
 		playLink.href = '#';
-	
+
 		const playIcon = document.createElement('i');
 		playIcon.className = 'fa fa-youtube-play';
-	
+
 		playLink.appendChild(playIcon);
 		playSpan.appendChild(playLink);
 		playIconDiv.appendChild(playSpan);
-	
+
 		imgWrapper.appendChild(playIconDiv);
 		imgCol.appendChild(imgWrapper);
-	
+
 		const infoCol = document.createElement('div');
 		infoCol.className = 'col-md-8 col-8';
-	
+
 		const infoDiv = document.createElement('div');
 		infoDiv.className = 'popular_2ilast bg_grey p-3 clearfix';
-	
+
 		const title = document.createElement('h5');
 		const titleLink = document.createElement('a');
 		titleLink.className = 'col_red';
-		titleLink.href = '#';
+		titleLink.href = `details.html?id=${show.id}`;
 		titleLink.textContent = show.name;
 		title.appendChild(titleLink);
-	
+
 		const summary = document.createElement('p');
 		summary.className = 'mb-2';
 		summary.textContent = show.summary ? show.summary.replace(/<[^>]+>/g, '') : 'No description available.';
-	
+
 		const genres = document.createElement('span');
 		genres.className = 'col_red';
 		genres.innerHTML = show.genres && show.genres.length > 0 ? show.genres.map(() => '<i class="fa fa-star"></i>').join(' ') : '';
-	
+
 		const views = document.createElement('p');
 		views.className = 'mb-0';
 		views.textContent = '1 Views';
-	
+
 		infoDiv.appendChild(title);
 		infoDiv.appendChild(summary);
 		infoDiv.appendChild(genres);
 		infoDiv.appendChild(views);
-	
+
 		infoCol.appendChild(infoDiv);
-	
+
 		card.appendChild(imgCol);
 		card.appendChild(infoCol);
-	
+
 		col.appendChild(card);
 		return col;
 	  }
-	
+
 	  function renderNextBatch() {
-		const nextBatch = allShows.slice(currentIndex, currentIndex + step);
+		const nextBatch = filteredShows.slice(currentIndex, currentIndex + step);
 		nextBatch.forEach(show => {
 		  container.appendChild(createCard(show));
 		});
 		currentIndex += step;
-	
-		if (currentIndex >= allShows.length) {
+
+		if (currentIndex >= filteredShows.length) {
 		  loadMoreBtn.style.display = 'none';
+		} else {
+		  loadMoreBtn.style.display = 'block';
 		}
 	  }
-	
+
 	  function fetchAllShows() {
 		fetch(apiUrl)
 		  .then(response => response.json())
 		  .then(data => {
-			container.innerHTML = '';
 			allShows = data;
+			filteredShows = allShows;
 			renderNextBatch();
 		  })
 		  .catch(error => {
@@ -1939,12 +1961,65 @@ function myFunction() {
 			console.error('Error fetching shows:', error);
 		  });
 	  }
-	
+
 	  loadMoreBtn.addEventListener('click', renderNextBatch);
-	
+
+	  
+	  const genreTabs = document.querySelectorAll('.nav-link');
+	  genreTabs.forEach(tab => {
+		tab.addEventListener('click', function (e) {
+		  e.preventDefault();
+		  const genreName = this.getAttribute('href').replace('#', '');
+
+		  container.innerHTML = '';
+		  currentIndex = 0;
+
+		  if (genreName.toLowerCase() === 'all') {
+			filteredShows = allShows;
+		  } else {
+			const genre = genreName.charAt(0).toUpperCase() + genreName.slice(1).toLowerCase();
+			filteredShows = allShows.filter(show => show.genres.includes(genre));
+		  }
+
+		  if (filteredShows.length === 0) {
+			container.innerHTML = `<p class="text-warning">No shows found in ${genreName} genre.</p>`;
+			loadMoreBtn.style.display = 'none';
+			return;
+		  }
+
+		  renderNextBatch();
+		});
+	  });
+
+	  const searchInput = document.querySelector('.form-control.bg-black');
+	  const searchButton = document.querySelector('.btn.bg_red');
+
+	  searchButton.addEventListener('click', function () {
+		const searchTerm = searchInput.value.trim().toLowerCase();
+		if (!searchTerm) return;
+
+		container.innerHTML = '';
+		currentIndex = 0;
+
+		filteredShows = allShows.filter(show => show.name.toLowerCase().includes(searchTerm));
+
+		if (filteredShows.length === 0) {
+		  container.innerHTML = `<p class="text-warning">No shows found with the name "${searchTerm}".</p>`;
+		  loadMoreBtn.style.display = 'none';
+		  return;
+		}
+
+		renderNextBatch();
+
+		setTimeout(() => {
+		  container.scrollIntoView({ behavior: 'smooth' });
+		}, 300);
+	  });
+
 	  fetchAllShows();
 	});
-	</script>
+</script>
+
 
 </body>
 
